@@ -12,17 +12,16 @@ public class Main {
         } else {
             System.out.println("Fallo");
         }
-        ;
-    }
+}
 
     public static boolean comprobar(String u) {
-        Comprobador obx1 = new Comprobador(u);
+        Comprobador obx1 = Comprobador.getInstance();
         System.out.println("Conectando a " + obx1.ip + ", con el usuario " + u);
         return obx1.con();
     }
 
     public static boolean comprobar2() {
-        Comprobador obx2 = new Comprobador();
+        Comprobador obx2 = Comprobador.getInstance();
         System.out.println("Conectando a " + obx2.ip + ", con el usuario " + obx2.nombre);
         return obx2.con();
     }
