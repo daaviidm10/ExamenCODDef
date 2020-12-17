@@ -14,8 +14,11 @@ public class Comprobador {
         this.nombre = parametro1;
     }
 public static Comprobador getInstance(){
+    /** Este metodo serve para ver o primer usuario e instanciando en Singleton.
+     *
+     */
 
-        if(instance==null){
+    if(instance==null){
 
             instance=new Comprobador();
         }

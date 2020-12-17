@@ -14,6 +14,9 @@ public class Main {
         }
 }
 
+    /**
+     * Nestes dous métodos do main é donde realizamos a instancia.
+     **/
     public static boolean comprobar(String u) {
         Comprobador obx1 = Comprobador.getInstance();
         System.out.println("Conectando a " + obx1.ip + ", con el usuario " + u);
